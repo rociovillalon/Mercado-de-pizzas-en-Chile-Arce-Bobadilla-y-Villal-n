@@ -1,0 +1,37 @@
+# Explicación limpieza de datos 
+
+Alhena Arce
+## Introducción
+
+El mercado de la pizza en Chile ha mostrado un notable crecimiento, reflejado en el incremento de pizzerías a nivel nacional. Según el informe de Mercado de Pizzas en Chile, este crecimiento ha sido del 105%.
+
+Como grupo, habíamos decidido llevar a cabo un proyecto web centrado en el mercado de la pizza en Chile, específicamente en la región Metropolitana. Sin embargo, debido a la dificultad de obtener una base de datos específica sobre el mercado de pizza, hemos optado por ampliar nuestra investigación a la categoría de restaurantes de comida rápida.
+
+## Proceso de limpieza de datos
+- __Paso 1__ _seleccionar y filtrar_: Ya una vez importado la base de datos en excel, vi que columnas servían y cuales no. En este caso, utilicé la columna de _actividad económica:, _número de empresas_, _las ventas anuales en UF_ y la _renta neta informada en UF_. Luego, con la herramienta para filtrar de excel, filtré en actividad económica la actividad que tenga que ver con restaurentes y comidas, así que seleccioné que solo me mostrara las _Actividades de restaurantes y de servicio móvil de comidas_.
+
+- __Paso 2__ _tabla dinámica_: Seleccioné la base de datos completa y luego inserte una tabla dinámica de excel para tener en vista solo las variables que seleccioné y que me servían y además poder ver los resultados de las sumas de las variables que elegí. Por ejemplo, la suma de todas las empresas del 2005. 
+En filas puse _año comercial_ y en valores puse la _suma de número de empresas_, _suma de las ventas anuales en UF_ y la suma de _la renta neta informada en UF_, para cada año. 
+
+- __Paso 3__ _tabla limpia_: Por último, en una nueva hoja de excel hice la tabla ya limpia, ordenada y con los datos que nos sirven para el análisis y renombré las variables en las columnas como _Total de N° de empresas_, _Total de las ventas anuales en UF_ y _Total de la renta neta informada en UF_. 
+
+
+## Lista de las fuentes de datos utilizadas
+Base de datos:
+- La sacamos de la página de Servicio de Impuestos Internos (SII), ya que sus datos son públicos y tienen datos desde 2005 hasta 2022 lo que nos sirve para ver el crecimiento según los años. 
+
+Articulos web consultados para el proyecto:
+
+- Publicación de _Foodservice_ (https://www.espaciofoodservice.cl/el-30-del-total-de-pizzerias-en-chile-pertenece-a-alguna-cadena-de-comida/): La fuente de esta página es Gregario. Esta información nos sirvió para conocer algunos datos interesantes como que el 30% de las pizzerias en Chile pertenece a alguna cadena de comida (como Papa John's, Telepizza, entre otras), el top 5 de comunas con más locales de pizzerías en la Región Metropolitana, entre otros datos específicos. 
+- Análisis del consumo de pizza en Chile (https://www.maquipan.cl/wp-content/uploads/2024/04/Maquipan-solucion-pizzeria.pdf): esto nos sirvió para otros datos como que el número de pizzerias en Chile se ha duplicado en los últimos cinco años y además hay una historia/caso particular sobre un local de pizza que nos podría servir para más adelante. 
+- Datos adicionales de la comida rápida en Chile (https://canalhoreca.cl/2024/05/15/ventas-de-servicio-de-comida-rapida-alcanzan-cifras-record-crecen-118-el-primer-trimestre-de-2024/): esta página nos sirvió para ver el crecimiento que ha tenido el consumo de comida rápida en Chile en los últimos años.
+- Preferencias de los chilenos respecto a pedidos por Delivery(https://aimchile.cl/preferencias-delivery/): esta página habla sobre el aumento de las personas que eligen pedir a través de apps de delivery.
+- Informe de consumo de fast food (https://aimchile.cl/wp-content/uploads/2024/07/241104_Informe_Radografia-al-consumo-de-FastFood_0703_V1.pdf): es un estudio sobre el consumo de _fast food_ en Chile hecho en marzo de 2024.
+
+## Preguntas que la base de datos limpia puede responder
+- __¿Cómo ha evolucionado el número de locales de comida anualmente?__
+Esta pregunta nos ayuda a identificar algún tipo de patrón de crecimiento o decrecimiento en el número de empresas de comida desde 2005 hasta 2022, lo cual ayuda a comprender el comportamiento de esta actividad económica a lo largo del tiempo.
+- __¿Existe una correlación entre el número de locales de comida y el total de ventas anuales o la renta neta?__
+Esta pregunta nos permite explorar si un mayor número de locales está asociado con mayores ventas o rentabilidad en la actividad económica, lo que sirve para evaluar el impacto de la expansión de establecimientos.
+- __¿En qué años se observó el mayor crecimiento en ventas y cómo coincide esto con el crecimiento en el número de locales?__
+Esta pregunta nos ayuda a identificar años en los que tuvo mayor éxito de ventas y ver si coinciden con el aumento en locales. Con esa respuesta podríamos hacer hipótesis sobre por qué ese año en específico tuvo mayor número de empresas y , si es el caso, mayor éxito en ventas.

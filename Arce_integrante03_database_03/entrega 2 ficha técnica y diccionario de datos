@@ -1,0 +1,28 @@
+# Ficha técnica y diccionario de datos 
+
+Alhena Arce
+## Carecterísticas de los datos
+
+- __Categoría de los datos__: estructurados, ordenados por filas y columnas definidas.
+- __Naturaleza de los datos__: cuantitativas, ya que los datos son números.
+- __Datos según su estado__: son datos procesados, ya que pasaron por algún tipo de investigación, estudio o proceso para que haya quedado el resultado final.
+- __Datos según su origen__: datos de fuente abierta, ya que los datos fueron obtenidos por la página del Servicio de Impuestos Internos (SII), la cual es publica y no se necesitan permisos especiales.
+- __Datos según su obtención__: datos experimentales, ya que son datos que están bajo condiciones controladas.
+
+## Alcance metodológico
+Esta base de datos, si bien es amplia con respecto al tema de nuestro proyecto web, ayuda a tener una percepción general de los locales de comida en Chile. Con esta información, podemos sacar algunos datos y conclusiones. 
+1. __Análisis de Tendencias Temporales__: se puede observar la tendencia en el número de locales de comida a lo largo de los años, lo que permitirá identificar si realmente hubo o no un crecimiento y en qué años.
+
+2. __Análisis financiero del sector__: con las variables de ventas y renta neta en UF, se podría analizar la evolución del volumen de ventas y rentabilidad, observando si el aumento en el número de locales se tradujo en mayores ingresos y rentabilidad en esta actividad económica.
+
+3. __Relación entre el crecimiento de locales y rentabilidad__: se puede investigar si existe o no una correlación entre el aumento en el número total de empresas y las variaciones que tuvieron las ventas o la renta neta. Se podría concluir si es que el aumento de empresas es directamente proporcional a las ventas, por ejemplo. Esto permite explorar si el crecimiento en locales es también un crecimiento financiero. 
+ 
+## Variables incorporadas
+- __año__: año al que corresponde, en esto se basa mi base de datos. Lo que queremos evaluar es el crecimiento según los años.
+- __Actividad económica__: ya una vez filtrada las actividades económicas, seleccioné _restaurantes y servicios de comida_, ya que la base de datos original tenía muchas actividades que no tenían nada que ver con comida, por lo tanto filtré para que me mostrara los datos sobre locales de comida, que es lo que me servía para mi tabla. 
+- __Número de empresas__: en esta variable se sumó todas las empresas registradas en el SII por año, lo que indica el total de empresas registradas y así podemos ver el crecimiento que estas han tenido. 
+- __Venta anuales en UF__: es el monto total de las ventas anuales (en dólares) por año. Elegí mostrar esta variable, ya que indica si es rentable el mercado de comida y para evaluar si ha tenido un alza.
+- __Renta neta en UF__: es la renta neta total anual (en dólares) por restaurantes y servicios de comida, una vez deducidos los gastos. Este dato tambipen nos ayuda a comprobar si el mercado de comida es rentable o no, si se gana más de lo que se pagó. 
+
+## Observaciones sobre la base de datos
+Ampliamos nuestra investigación, por lo que la base de datos que yo realicé es la más general en comparacipon con la base de datos que hicieron mis compañeras. El objetivo era ver si efectivamente hubo un crecimiento anual en los restaurantes y servicios de comida como vimos en las diferentes páginas web y estudios y, viendo la tabla limpia, efectivamente hubo un crecimiento (excepto en 2020). 
