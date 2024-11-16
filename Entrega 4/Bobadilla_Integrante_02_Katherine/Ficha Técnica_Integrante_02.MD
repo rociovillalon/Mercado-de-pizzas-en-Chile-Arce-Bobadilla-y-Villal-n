@@ -74,8 +74,9 @@ la base de datos limpia,
 me di cuenta que la cadena de pizzería Pizzapizza
 en algunos casos estaba muy bien evaluada, 
 alcanzando el máximo rating 
-(5.0), mientras que en el resto de comunas 
-no llegaba al 4.0, incluso tenía 1.0
+(5.0), mientras que en el resto de comunas habían
+mayores variaciones, incluso llegando a 1.0, en 
+el caso de la comuna de Las Condes con 703 reviews.
 Por lo tanto, decidí centrarme en esto 
 ya que aquí ocurría la mayor variedad.
 
