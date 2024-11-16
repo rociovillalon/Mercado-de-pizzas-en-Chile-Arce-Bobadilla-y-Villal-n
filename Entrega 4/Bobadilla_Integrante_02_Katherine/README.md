@@ -23,7 +23,7 @@ Al tener considerado los elementos que emplearía, cree un archivo excel para se
 Mi historia surge en base a la interrogante de por qué algunas cadenas de pizzerías están mejor evaluadas que otras y por qué esta diferencia está más marcada en aquellas comunas con mayor población y nivel socioeconómico. Para ello, consideré que la visualización solamente tuviera las columnas de **comuna**, **cadena** y **rating**
 
 ## **Paso 6**: 
-Al revisar los datos, me di cuenta que la cadena Pizzapizza era la que mayor variación tenía en sus Rating, en comparación a otras cadenas de pizzerías. Por ejemplo, Melt Pizza y Papa Jhon´s en la mayor cantidad de comunas están muy bien evaluadas. Esto se relaciona con otras informaciones, por ejemplo, que Papa Jhon´s es la pizzería que más ha crecido a lo largo de Chile en el último tiempo, Melt Pizza también ha experimentado un crecimiento.Sin embargo, Pizzapizza es una cadena relativamente vieja, que lleva tiempo en el país, pero algo ha ocurrido que no le permite alcanzar los números de sus competencias.
+Al revisar los datos, me di cuenta que la cadena Pizzapizza era la que mayor variación tenía en sus Rating, en comparación a otras cadenas de pizzerías. Por ejemplo, Melt Pizza y Papa Jhon´s en la mayor cantidad de comunas están muy bien evaluadas. Esto se relaciona con otras informaciones, por ejemplo, que Papa Jhon´s es la pizzería que más ha crecido a lo largo de Chile en el último tiempo, Melt Pizza también ha experimentado un crecimiento.Sin embargo, Pizzapizza es una cadena con más de una década en el país, está desde 2012, pero algo ha ocurrido que no le permite alcanzar los números de sus competencias.
 
 ## **Paso 7**:
 Teniendo esto en consideración, a través de Google Colab desarrollé un Python que me permitiera crear un gráfico de barras horizontales, de tal manera que evidenciara los Rating por comuna de acuerdo con la cadena Pizzapizza. Me basé en las ayudantías de Altair para la mayor cantidad de códigos. Sin embargo, al tener dificultades en encontrar el gráfico que quería, utilicé herramientas de _CHATGPT_ para la visualización.
@@ -47,7 +47,7 @@ Santiago, una comuna con una gran población y que tiene, a su vez, un gran fluj
 
 *¿Por qué ocurre este fenómeno?* 
 
-Una posible conclusión a la que podemos llegar, es que estas comunas pese a tener otras cadenas de pizzerías en su sector, puede privilegiar los precios, ofertas y el tiempo de espera. Pizzapizza se destaca porque históricamente ha tenido promos 2x1 casi toda la semana, sus pizzas son más artesanales, con masas gruesas e ingredientes variados que satisfacen. Si pensamos en estas comunas, especialmente Santiago, que como antes mencionaba, tiene un gran flujo de personas diario podemos analizar que prefieran ir a estos centros o que su experiencia sea mejor. 
+Una posible conclusión a la que podemos llegar, es que estas comunas pese a tener otras cadenas de pizzerías en su sector, puede privilegiar los precios, ofertas y el tiempo de espera. Pizzapizza se destaca porque históricamente ha tenido promos 2x1 casi toda la semana, sus pizzas son más artesanales, con masas gruesas e ingredientes variados que satisfacen. Si pensamos en estas comunas, especialmente Santiago, que como antes mencionaba, tiene un gran flujo de personas diario podemos analizar que prefieran ir a estos centros ya que pueden conseguir más producto con menos dinero. 
 
 *¿Cuáles son las comunas que evalúan de peor manera la cadena?*
 
@@ -55,7 +55,7 @@ Consideremos que una mala evaluación es desde los 3.5 puntos hacia abajo. Tenie
 
 *¿Qué puede ocurrir aquí?*
 
-Pasa con estas comunas, especialmente Las Condes, Ñuñoa y San Miguel que cuentan con una gran variedad de pizzerías y variados locales de comida en sus territorios. Por lo tanto, esta cadena que no es la número uno en popularidad o dentro de las que más consumen las personas, está muy por debajo de la competencia.
+Pasa con estas comunas, especialmente Las Condes, Ñuñoa y San Miguel que cuentan con una gran variedad de pizzerías y variados locales de comida en sus territorios. Por lo tanto, esta cadena que no es la número uno en popularidad o dentro de las que más consumen las personas, está muy por debajo de la competencia. Asimismo, caber destacar como antecedente que en 2012, un reportaje de TVN denunció y expuso graves irregularidades sanitarias de la cadena de alimentos.
 
 Los análisis que podemos desarrollar en base a estas comunas es que Pizzapizza no brinda las necesidades que las personas que prefieren este tipo de alimentos, buscan satisfacer. 
 
