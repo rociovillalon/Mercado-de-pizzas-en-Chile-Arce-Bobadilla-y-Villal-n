@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-ca3c63b21ded8156c4f98b3b6c9df2d2"}, "mark": {"type": "bar", "color": "#ff7f00"}, "encoding": {"tooltip": [{"field": "A\u00f1o", "type": "quantitative"}, {"field": "Total Ventas anuales en UF", "type": "quantitative"}], "x": {"field": "A\u00f1o", "sort": "ascending", "title": "A\u00f1o", "type": "ordinal"}, "y": {"field": "Total Ventas anuales en UF", "title": "Total Ventas anuales en UF en el rubro de Actividades de restaurantes y de servicio m\u00f3vil de comidas", "type": "quantitative"}}, "height": 400, "title": "Total Ventas anuales en UF por A\u00f1o", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-ca3c63b21ded8156c4f98b3b6c9df2d2": [{"A\u00f1o": 2005, "Total Ventas anuales en UF": 38990307.17}, {"A\u00f1o": 2006, "Total Ventas anuales en UF": 39123177.16}, {"A\u00f1o": 2007, "Total Ventas anuales en UF": 40100680.49}, {"A\u00f1o": 2008, "Total Ventas anuales en UF": 38987409.07}, {"A\u00f1o": 2009, "Total Ventas anuales en UF": 42757451.65}, {"A\u00f1o": 2010, "Total Ventas anuales en UF": 46424383.33}, {"A\u00f1o": 2011, "Total Ventas anuales en UF": 53304621.03}, {"A\u00f1o": 2012, "Total Ventas anuales en UF": 57514134.55}, {"A\u00f1o": 2013, "Total Ventas anuales en UF": 62512331.41}, {"A\u00f1o": 2014, "Total Ventas anuales en UF": 66355624.11}, {"A\u00f1o": 2015, "Total Ventas anuales en UF": 90570647.48}, {"A\u00f1o": 2016, "Total Ventas anuales en UF": 95739874.28}, {"A\u00f1o": 2017, "Total Ventas anuales en UF": 100871053.8}, {"A\u00f1o": 2018, "Total Ventas anuales en UF": 105510702.2}, {"A\u00f1o": 2019, "Total Ventas anuales en UF": 123565937.2}, {"A\u00f1o": 2020, "Total Ventas anuales en UF": 64562298.51}, {"A\u00f1o": 2021, "Total Ventas anuales en UF": 116310565.2}, {"A\u00f1o": 2022, "Total Ventas anuales en UF": 142008670.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
