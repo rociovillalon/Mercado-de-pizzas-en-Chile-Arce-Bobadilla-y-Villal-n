@@ -109,6 +109,13 @@ Ya en el final, mostramos la cantidad de reviews que tienen estos locales y busc
 
 Un diseño interactivo invita al usuario a reflexionar sobre su propia relación con la pizza, ofreciendo una encuesta rápida que les permita posicionar sus preferencias y compararlas con las tendencias nacionales. Las personas interesadas en esta página serían las personas que les guste la pizza, personas interesadas en introducirse al mercado de la pizza, ya sea porque quiere emprender un negocio o simplemente le interesa.
 
+## Decisiones sobre elementos visuales
+Los colores que seleccionamos para el diseño tienen una finalidad de evocar a la pizza, ya que cada uno está inspirado en elementos icónicos de las pizzas. El beige (#fbe7c6) evoca la imagen de las masas de las pizzas, ofreciendo una base cálida y neutra que equilibra la composición. El blanco proporciona un contraste limpio y elegante. Un rojo intenso y vibrante (#d62828) remite al clásico color de los pepperonis, un ingrediente emblemático en muchas pizzas. A esto se suma un tono naranja suave (#f4a261), que recuerda a la salsa o incluso a una masa horneada, también incluimos un tono piel (#f1c27d) y un amarillo cálido (#f7d9a7), que es por queso fundido, mientras que el café (#e0a96d) evoca la apariencia de las cortezas doradas y crujientes. Esta paleta no solo enriquece la experiencia visual del sitio web, sino que también logra transmitir un sentido de cercanía y familiaridad, conectando emocionalmente con los ingredientes y sabores que hacen única a una pizza.
+
+Además, para la entrada de la página principal, optamos por incluir una animación dinámica de una pizza giratoria. Esta decisión no es meramente estética, sino que tiene como objetivo captar inmediatamente la atención de los visitantes, generando curiosidad y entusiasmo. Queremos que tanto los clientes frecuentes como los nuevos usuarios, y en especial los amantes de la pizza, sientan una bienvenida visual atractiva que los invite a explorar más.
+
+Finalmente, para garantizar una lectura fluida y una experiencia agradable, seleccionamos las tipografías Arial y Sans Serif. Estas fuentes son conocidas por su claridad y simplicidad, características ideales para facilitar la interacción del usuario con el contenido del sitio web. Nuestro objetivo es crear una navegación intuitiva y agradable, donde los textos sean accesibles para todos los usuarios.
+
 ## Link de video y carrusel
 
 Link video: https://youtu.be/1rGtTr2SWJU 
