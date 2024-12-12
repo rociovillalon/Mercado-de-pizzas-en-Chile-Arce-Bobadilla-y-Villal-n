@@ -1,7 +1,11 @@
 /* Estilo general */
 body {
   margin: 0 auto;
+<<<<<<< HEAD
+  padding: 60 px 20 px;
+=======
   padding: 60px 20px;
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
   box-sizing: border-box;
   background: #fbe7c6; /* Fondo claro */
   font-family: Arial, sans-serif;
@@ -20,6 +24,21 @@ body {
 
 .titulo-portada {
     position: absolute; /* Coloca el título sobre la imagen */
+<<<<<<< HEAD
+    top: 360px; /* Lo coloca verticalmente en el centro */
+    left: 50%; /* Lo coloca horizontalmente en el centro */
+    transform: translateX(-50%); /* Centra el título horizontalmente */
+    font-size: 36px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color de texto (tomate) */
+    text-align: center; /* Centra el texto */
+    background-color: #d62828;
+    width: 100%;
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+   border-radius: 8px; /* Bordes redondeados (opcional) */
+    z-index: 1; /* Asegura que el título esté por encima de la imagen */
+  }
+  
+=======
     top: 550px; /* Lo coloca verticalmente en el centro */
     left: 50%; /* Lo coloca horizontalmente en el centro */
     transform: translateX(-50%); /* Centra el título horizontalmente */
@@ -32,6 +51,7 @@ body {
     z-index: 1; /* Asegura que el título esté por encima de la imagen */
   }
 
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
 
 .contenedor-pizza {
   /* Estilo del contenedor de la pizza interactiva */
@@ -224,9 +244,23 @@ span {
     padding: 10px 230px;
 }
 
+<<<<<<< HEAD
+.intrograficolocales {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+    padding: 10px 230px;
+}
+
+/* Sección: La preferencia de los chilenos */
+.seccion-preferencia {
+  background-color: #f7d9a7; /* Fondo gris claro */
+=======
 /* Sección: La preferencia de los chilenos */
 .seccion-preferencia {
   background-color: #f2f2f2; /* Fondo gris claro */
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
   display: flex;
   width: 100%;
   min-height: 100vh; /* Ocupar toda la altura de la pantalla */
@@ -433,6 +467,8 @@ span {
     text-align: justify
 }
 
+<<<<<<< HEAD
+=======
 #tranding,
 *,
 *::before,
@@ -443,6 +479,7 @@ span {
     text-decoration: none;
 }
 
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
 html {
     font-size: 62.5%;
     font-family: sans-serif;
@@ -469,11 +506,20 @@ header {
     height: 10rem;
     background: #dabd07;
 }
+<<<<<<< HEAD
+
+.tranding-slide .tranding-slide-img img {
+  width: 100%; /* La imagen ocupa el ancho disponible */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 2rem;
+  object-fit: cover;
+=======
 .tranding-slide .tranding-slide-img img {
     width: 37rem;
     height: 42rem;
     border-radius: 2rem;
     object-fit: cover;
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
 }
 
 .swiper-slide-shadow-left,
@@ -494,6 +540,64 @@ i:hover {
 }
 
 .swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left {
+<<<<<<< HEAD
+ background-image:none;}
+
+/* Contenedor principal para el cuadro de texto y el carrusel */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea ambos elementos arriba */
+  gap: 2rem; /* Espaciado entre cuadro y carrusel */
+}
+
+
+/* Contenedor principal de la sección */
+.unique-section {
+  display: flex; /* Flexbox para organizar elementos en fila */
+  justify-content: space-between; /* Cuadro de texto a la izquierda y carrusel a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 2rem; /* Espacio entre cuadro de texto y carrusel */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Asegura que el padding no altere el tamaño */
+}
+
+/* Cuadro de texto */
+.text-box {
+  background: linear-gradient(135deg, #f5deb7, #f7d9a7); /* Fondo degradado */
+  color: #000000; /* Texto en blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  max-width: 45%; /* Ancho máximo del cuadro */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+/* Carrusel */
+#tranding {
+  display: flex;
+  justify-content: center; /* Centra el carrusel horizontalmente */
+  align-items: center; /* Centra el carrusel verticalmente */
+  max-width: 55%; /* Ancho máximo del carrusel */
+}
+
+.tranding-slider {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%; /* Imágenes ajustadas al ancho */
+  height: auto; /* Mantener proporciones */
+  border-radius: 1rem; /* Bordes redondeados */
+  object-fit: cover; /* Ajusta el contenido dentro del espacio */
+}
+
+/* Estilo para la sección Los protagonistas */
+.seccion-protagonistas {
+  
+  background-color: #f7d9a7; /* Fondo gris claro */
+=======
  background-image:none;
 }
 
@@ -502,6 +606,7 @@ i:hover {
 .seccion-protagonistas {
   padding: 60px 0;
   background-color: #f2f2f2; /* Fondo gris claro */
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
   text-align: center;
 }
 
@@ -531,6 +636,20 @@ i:hover {
     padding: 20px;
 }
 
+<<<<<<< HEAD
+.textocomparacionratings2 {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+=======
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
 
 .melt {
   width: 20%;
@@ -574,6 +693,19 @@ body {
   text-align: justify;
 }
 
+<<<<<<< HEAD
+.texto-introduccion3cadenas {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+      padding-bottom: 20px;
+}
+
+=======
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
 .Gráfico-Top-5-comunas {
   width: 80%;
   height: auto;
@@ -583,7 +715,10 @@ body {
 
 /* Estilo para la sección Top 5 comunas */
 .seccion-top5 {
+<<<<<<< HEAD
+=======
   padding: 60px 0;
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
   background-color: #ffffff; /* Fondo blanco */
   text-align: center;
 }
@@ -697,9 +832,86 @@ video {
   }
 
   .voxpopuli {
+<<<<<<< HEAD
+    width: 50%;
+=======
     width: 30%;
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
     height: auto;
     margin: 0 auto; /* Centrar los gráficos */
     margin-bottom: 20px; /* Espaciado adicional debajo del grid */
     padding: 20px;
+<<<<<<< HEAD
+    justify-content: center;
+    display: flex
+;
   }
+  
+  .text-box h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+  }
+  
+  .text-box p {
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
+  /* Animación sutil para flotar */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .video-container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+  iframe {
+    width: 80%;              /* Ajusta el ancho del video, usa el porcentaje que prefieras */
+    height: 450px;           /* Ajusta la altura del video (aquí puedes poner un valor mayor si lo necesitas) */
+    max-width: 100%;         /* Asegura que el iframe no se salga de los límites */
+    aspect-ratio: 16 / 9;    /* Mantiene la relación de aspecto 16:9 */
+    border: none;            /* Opcional, quita el borde del iframe */
+}
+
+.text-container {
+  width: 80%;              /* Ajusta el ancho del contenedor */
+  margin: 20px auto;       /* Centra el contenedor y agrega margen */
+  padding: 20px;           /* Espacio interno */
+  background-color: #f7d9a7; /* Color de fondo */
+  border-radius: 8px;      /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-family: 'Arial', sans-serif; /* Tipo de fuente */
+}
+
+h1 {
+  font-size: 30px;      /* Tamaño más pequeño para el título */
+}
+
+footer {
+  background-color: #d62828;
+  color: #fff;
+  text-align: center;
+  font-size: smaller;
+  padding: 20px;
+}
+
+.text-box2 {
+  background: linear-gradient(135deg, #e0dede, #f0f0f0); /* Fondo degradado */
+  color: #000000; /* Texto en blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: justify; /* Texto alineado a la izquierda */
+}
+=======
+  }
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1

@@ -22,7 +22,11 @@ function animarPizza() {
 
 // Animar el título
 function animarTitulo() {
+<<<<<<< HEAD
+  const texto = "Último Trozo";
+=======
   const texto = ": Último Trozo";
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
   let index = 0;
 
   const intervalo = setInterval(() => {
@@ -105,4 +109,8 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   const el = document.getElementById('vis');
   vegaEmbed("#vis2", spec, embedOpt)
     .catch(error => showError(el, error));
+<<<<<<< HEAD
 })(vegaEmbed);
+=======
+})(vegaEmbed);
+>>>>>>> 7c5f67b7588cc3987db04bbad94b1c2d7734c2e1
