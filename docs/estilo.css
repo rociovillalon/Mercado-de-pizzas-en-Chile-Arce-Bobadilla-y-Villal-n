@@ -1,0 +1,865 @@
+/* Estilo general */
+body {
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  background: #fbe7c6; /* Fondo claro */
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Evita desplazamiento horizontal */
+  text-align: justify;
+}
+
+/* Primera sección: Pizza giratoria */
+
+
+.seccion-portada2 {
+  position: relative; /* Necesario para que el título se posicione sobre el fondo */
+  width: 100%;
+  height: 100vh; /* Ocupa toda la pantalla */
+}
+
+.titulo-portada {
+    position: absolute; /* Coloca el título sobre la imagen */
+    top: 550px; /* Lo coloca verticalmente en el centro */
+    left: 50%; /* Lo coloca horizontalmente en el centro */
+    transform: translateX(-50%); /* Centra el título horizontalmente */
+    font-size: 36px; /* Tamaño de la fuente */
+    color: #d62828; /* Color de texto (tomate) */
+    text-align: center; /* Centra el texto */
+    background-color: rgba(255, 255, 255, 0.548); /* Fondo semi-transparente para mejorar la visibilidad */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  border-radius: 8px; /* Bordes redondeados (opcional) */
+    z-index: 1; /* Asegura que el título esté por encima de la imagen */
+  }
+
+
+.contenedor-pizza {
+  /* Estilo del contenedor de la pizza interactiva */
+  position: absolute; /* Lo posicionamos de manera absoluta sobre el parallax */
+  top: 40%; /* Ajusta esto para ubicarlo verticalmente en la imagen */
+  left: 50%; /* Ajusta esto para ubicarlo horizontalmente a la derecha */
+  transform: translate(-50%, -50%); /* Centra la pizza en el punto especificado */
+  z-index: 1; /* Asegura que la pizza esté sobre el parallax */
+  width: 20%; /* Tamaño ajustable según la necesidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pizza {
+  animation: girar 10s linear infinite;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+/* Pizza styling */
+.masa {
+  fill: #f7d9a7;
+  stroke: #e0a96d;
+  stroke-width: 5;
+}
+
+.porcion {
+  fill: #f4a261;
+  stroke: #f1c27d;
+  stroke-width: 3;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: scale(0.8);
+}
+
+.porcion.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pepperoni {
+  fill: #d62828;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.pepperoni.visible {
+  opacity: 1;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.parallax {
+  background-image: url('portada.jpeg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax2 {
+  background-image: url('locales.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Estilo para la imagen de fondo */
+.portada3 {
+  background-image: url('portada4.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  position: absolute; /* Coloca la imagen en el fondo */
+  top: 0; /* Alinea desde la parte superior */
+  left: 0; /* Alinea desde el borde izquierdo */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: 100vh; /* Hace que la imagen ocupe toda la altura de la pantalla */
+  z-index: -1; /* Coloca la imagen detrás de otros elementos */
+}
+
+/* Estilo para la sección */
+.seccion-portada2 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Esto asegura que la sección de portada ocupe toda la altura de la pantalla */
+  overflow: hidden; /* Asegura que cualquier contenido fuera de los límites del contenedor no sea visible */
+}
+
+/* Contenido dentro de la sección */
+.contenido-portada2 {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido se vea por encima de la imagen */
+}
+
+
+/* Segunda sección */
+.seccion-contexto {
+  width: 100%;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 40px 0; /* Espaciado mayor para texto */
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Separación visual entre secciones */
+  display: flex;
+  justify-content: center;
+}
+
+.contenido-seccion {
+  max-width: 800px; /* Limitar el ancho del contenido */
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000; /* Texto oscuro */
+  margin-bottom: 20px;
+}
+
+span {
+  font-size: 1em;
+  color: #d62828;
+  font-weight:bold;
+}
+
+.texto-autores {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+}
+
+.texto-introducción {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align:justify;
+  color: #000000; /* Texto oscuro */
+}
+
+/* Animación de la pizza */
+
+.mercado {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000; /* Texto oscuro */
+  margin: 0 auto 20px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.cuadro-texto h2 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titulocadenasxregion {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000; /* Texto oscuro */
+  margin: 0 auto 20px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+.texto-explicacióngráficos {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+    padding: 10px 230px;
+}
+
+.intrograficolocales {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+    padding: 10px 230px;
+}
+
+/* Sección: La preferencia de los chilenos */
+.seccion-preferencia {
+  background-color: #f2f2f2; /* Fondo gris claro */
+  display: flex;
+  width: 100%;
+  min-height: 100vh; /* Ocupar toda la altura de la pantalla */
+  padding: 40px 0; /* Espaciado para el contenido */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Centrar el contenido verticalmente */
+  gap: 20px;
+}
+
+.contenido-preferencia {
+  max-width: 800px;
+  text-align: center; /* Centra el texto */
+}
+
+.titulo-preferencia {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000; /* Texto oscuro */
+  margin-bottom: 20px;
+}
+
+.comparativadeprecios {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000; /* Texto oscuro */
+  margin-bottom: 20px;
+}
+
+
+.texto-preferencia {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+  text-align: justify;
+}
+
+.podio {
+  width: 80%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+  padding: 20px;
+}
+
+
+.contenedor-texto-imagen {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  grid-gap: 20px; /* Espacio entre columnas */
+  max-width: 1200px;
+  align-items: center; /* Centra verticalmente */
+}
+
+.texto-lado-izquierdo {
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo gris claro para el texto */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.texto-lado-izquierdo h2 {
+  font-size: 24px;
+  color: #000000; /* Título oscuro */
+  margin-bottom: 10px;
+}
+
+.texto-lado-izquierdo p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+}
+
+/* Sección: Imagen a la izquierda y texto a la derecha */
+.seccion-imagen-texto {
+  padding: 20px 20px;
+  background-color: #f8f8f8; /* Fondo gris muy claro */
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-imagen-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  grid-gap: 20px; /* Espacio entre columnas */
+  max-width: 1200px;
+  align-items: center; /* Centra verticalmente */
+}
+
+.imagen-lado-izquierdo img {
+  width: 100%; /* Imagen responsiva */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.texto-lado-derecho {
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco para el texto */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.texto-lado-derecho h2 {
+  font-size: 24px;
+  color: #000000; /* Título oscuro */
+  margin-bottom: 10px;
+}
+
+.texto-lado-derecho p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+}
+
+/* Sección: Imagen a la izquierda y texto a la derecha */
+.seccion-imagen-texto {
+  padding: 60px 20px;
+  background-color: #f8f8f8; /* Fondo gris muy claro */
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-imagen-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  grid-gap: 20px; /* Espacio entre columnas */
+  max-width: 1200px;
+  align-items: center; /* Centra verticalmente */
+}
+
+.imagen-lado-izquierdo img {
+  width: 100%; /* Imagen responsiva */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Sección: Texto a la izquierda e imagen a la derecha */
+.seccion-texto-imagen {
+  padding: 60px 0;
+  background-color: #ffffff; /* Fondo blanco */
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-texto-imagen {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  grid-gap: 20px; /* Espacio entre columnas */
+  max-width: 1200px;
+  align-items: center; /* Centra verticalmente */
+}
+
+
+.imagen-lado-derecho img {
+  width: 100%; /* Imagen responsiva */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#sushipizzahamburguesa {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#cadenasxregión {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px
+}
+
+#empresas {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.preciospizzas {
+  width: 80%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+  padding: 20px;
+}
+
+#graficotop5 {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#velocimetro {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.explicaciongraficotop5 {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify
+}
+
+#tranding,
+*,
+*::before,
+*::after {
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #f4d805;
+    color: #000000;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75rem;
+    height: 10rem;
+    background: #dabd07;
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 100%; /* La imagen ocupa el ancho disponible */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 2rem;
+  object-fit: cover;
+
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.networks {
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+}
+
+i:hover {
+    cursor: pointer;
+    transition: 1s;
+    color: #fff;
+}
+
+.swiper-3d .swiper-slide-shadow-right,.swiper-3d .swiper-slide-shadow-left {
+ background-image:none;}
+
+/* Contenedor principal para el cuadro de texto y el carrusel */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea ambos elementos arriba */
+  gap: 2rem; /* Espaciado entre cuadro y carrusel */
+}
+
+
+/* Contenedor principal de la sección */
+.unique-section {
+  display: flex; /* Flexbox para organizar elementos en fila */
+  justify-content: space-between; /* Cuadro de texto a la izquierda y carrusel a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 2rem; /* Espacio entre cuadro de texto y carrusel */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Asegura que el padding no altere el tamaño */
+}
+
+/* Cuadro de texto */
+.text-box {
+  background: linear-gradient(135deg, #f5deb7, #f7d9a7); /* Fondo degradado */
+  color: #000000; /* Texto en blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  max-width: 45%; /* Ancho máximo del cuadro */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+/* Carrusel */
+#tranding {
+  display: flex;
+  justify-content: center; /* Centra el carrusel horizontalmente */
+  align-items: center; /* Centra el carrusel verticalmente */
+  max-width: 55%; /* Ancho máximo del carrusel */
+}
+
+.tranding-slider {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%; /* Imágenes ajustadas al ancho */
+  height: auto; /* Mantener proporciones */
+  border-radius: 1rem; /* Bordes redondeados */
+  object-fit: cover; /* Ajusta el contenido dentro del espacio */
+}
+
+
+
+/* Estilo para la sección Los protagonistas */
+.seccion-protagonistas {
+  padding: 60px 0;
+  background-color: #f7d9a7; /* Fondo gris claro */
+  background-image:none;
+  text-align: center;
+}
+
+.Papa-John´s {
+  width: 30%;
+  padding: 10px 0;
+  background-color: #f8f8f8; /* Fondo gris claro */
+  text-align: center;
+}
+
+.dominos-pizza {
+  width: 30%;
+  padding: 50px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.textocomparacionratings {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.textocomparacionratings2 {
+  font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.melt {
+  width: 20%;
+  padding: -20px 0;
+  background-color: #f8f8f8; /* Fondo gris claro */
+  text-align: center;
+}
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.seccion-protagonistas h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #000000; /* Color oscuro para el título */
+}
+
+.protagonista {
+  margin-bottom: 40px; /* Espaciado entre los bloques */
+}
+
+.protagonista img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.protagonista p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+}
+
+.texto-introduccion3cadenas {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+      padding-bottom: 20px;
+}
+
+.Gráfico-Top-5-comunas {
+  width: 80%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+}
+
+/* Estilo para la sección Top 5 comunas */
+.seccion-top5 {
+  padding: 60px 0;
+  background-color: #ffffff; /* Fondo blanco */
+  text-align: center;
+}
+
+.seccion-top5 h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #000000; /* Título en color oscuro */
+}
+
+.grafico-contenedor {
+  margin: 0 auto 30px; /* Centra el gráfico y añade espaciado inferior */
+  max-width: 800px; /* Limita el ancho máximo del gráfico */
+}
+
+.grafico {
+  width: 100%; /* Se ajusta al ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.texto-grafico {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+}
+
+.texto-comparacion {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+}
+
+#comparacionratings{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+/* Estilo para la sección Historias Top 5 comunas */
+.seccion-historias {
+  padding: 20px 0;
+  background-color: #f5f5f5; /* Fondo gris claro */
+  text-align: center;
+}
+
+.seccion-historias h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #000000; /* Título en color oscuro */
+}
+
+.texto-historias {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+}
+
+.textovelocimetro {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000000; /* Texto gris */
+  max-width: 800px; /* Limita el ancho del texto */
+  margin: 0 auto; /* Centra el texto */
+  text-align: justify;
+}
+
+.Rating-PapaJohn´s {
+  width: 70%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+}
+.Papa-John´s-regiones {
+  width: 70%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+}
+
+.Rating-dominos {
+  width: 70%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+}
+
+.Rating-melt {
+  width: 70%;
+  height: auto;
+  /* Centrar los gráficos */
+  /* Espaciado adicional debajo del grid */
+  margin: 0 auto 20px;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  margin-top:50px;
+  margin-bottom: 50px;
+  }
+
+  .voxpopuli {
+    width: 50%;
+    height: auto;
+    /* Centrar los gráficos */
+    /* Espaciado adicional debajo del grid */
+    margin: 0 auto 20px;
+    padding: 20px;
+    justify-content: center;
+    display: flex
+;
+  }
+
+  .text-box h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+  }
+
+  .text-box p {
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  /* Animación sutil para flotar */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .video-container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px;
+    padding: 20px;
+}
+  iframe {
+    width: 80%;              /* Ajusta el ancho del video, usa el porcentaje que prefieras */
+    height: 450px;           /* Ajusta la altura del video (aquí puedes poner un valor mayor si lo necesitas) */
+    max-width: 100%;         /* Asegura que el iframe no se salga de los límites */
+    aspect-ratio: 16 / 9;    /* Mantiene la relación de aspecto 16:9 */
+    border: none;            /* Opcional, quita el borde del iframe */
+}
+
+.text-container {
+  width: 80%;              /* Ajusta el ancho del contenedor */
+  margin: 20px auto;       /* Centra el contenedor y agrega margen */
+  padding: 20px;           /* Espacio interno */
+  background-color: #f7d9a7; /* Color de fondo */
+  border-radius: 8px;      /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  font-family: 'Arial', sans-serif; /* Tipo de fuente */
+}
+
+h1 {
+  font-size: 30px;      /* Tamaño más pequeño para el título */
+}
+
+footer {
+  background-color: #d62828;
+  color: #fff;
+  text-align: center;
+  font-size: smaller;
+  padding: 20px;
+}
+
+.text-box2 {
+  background: linear-gradient(135deg, #e0dede, #f0f0f0); /* Fondo degradado */
+  color: #000000; /* Texto en blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: justify; /* Texto alineado a la izquierda */
+}
+
+h1.cadenas{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+}
